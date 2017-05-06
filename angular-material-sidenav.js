@@ -429,7 +429,7 @@
             '   ng-click="toggle(section)"\n' +
             '   aria-controls="docs-menu-{{section.name}}"\n' +
             '   aria-expanded="{{isOpen(section)}}">\n' +
-            '   <div flex layout="row">\n' +
+            '   <div>\n' +
             '       <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}\n' +
             '       <span flex></span>\n' +
             '       <span aria-hidden="true" class="md-toggle-icon"\n' +

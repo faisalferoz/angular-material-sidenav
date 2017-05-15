@@ -157,9 +157,9 @@
                         if (section.children) {
                             section.children.every(function (child) {
                                 if (child.id === id) {
-		                            child.hidden = !value;
-		                            return false;
-		                        };
+                                    child.hidden = !value;
+                                    return false;
+                                };
 
                                 if (child.pages) {
                                     child.pages.every(function (page) {
@@ -412,9 +412,8 @@
     .run(['$templateCache', function($templateCache) {
         $templateCache.put('views/ss/menu-link.tmpl.html',
             '<md-button\n' +
-            '   ss-style-color="{\'background-color\': (isSelected(section.state) || $state.includes(section.state)) ? \'primary.800\': \'primary.default\'}"' +
+            '   ss-style-color="{\'background-color\': \'primary.default\'}"' +
             '   class="md-raised md-primary"' +
-            '   ui-sref="{{section.state}}"\n' +
             '   ng-click="focusSection(section)">\n' +
             '   <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}\n' +
             '   <span class="md-visually-hidden"\n' +

@@ -85,7 +85,7 @@
     z-index: 1;
 }
 
-.menu .menu-toggle-list a.md-button {
+.menu .menu-toggle-list .md-button {
     display: block;
     padding: 0 16px 0 32px;
     text-transform: none;
